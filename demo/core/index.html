@@ -1,0 +1,3453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" href="favicon.png" /> -->
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <!-- <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        'script',
+        'https://mc.yandex.ru/metrika/tag.js',
+        'ym',
+      );
+
+      ym(50545570, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        trackHash: true,
+        ecommerce: 'dataLayer',
+      });
+    </script> -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NWBBDB6');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stories Slider</title>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NWBBDB6"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/50545570"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+
+    <div id="app">
+      <!-- Demo app -->
+      <div class="demo-app">
+        <!-- Demo content -->
+        <!-- <div class="demo-title">
+          <img src="images/logo.png" width="156" />
+        </div> -->
+        <div class="demo-stories">
+          <a href="#">
+            <span class="demo-stories-avatar">
+              <img src="avatars/widget-1.png" alt="" />
+            </span>
+            <span class="demo-stories-name"> Жизнь<br />на Садовом</span>
+          </a>
+          <a href="#">
+            <span class="demo-stories-avatar">
+              <img src="avatars/widget-2.png" alt="" />
+            </span>
+            <span class="demo-stories-name">Клубный формат<br />комплекса</span>
+          </a>
+          <a href="#">
+            <span class="demo-stories-avatar">
+              <img src="avatars/widget-3.png" alt="" />
+            </span>
+            <span class="demo-stories-name"
+              >Дом как<br />достопримеча-<br />тельность</span
+            >
+          </a>
+          <a href="#">
+            <span class="demo-stories-avatar">
+              <img src="avatars/widget-4.png" alt="" />
+            </span>
+            <span class="demo-stories-name">Дизайнерская<br />отделка</span>
+          </a>
+          <a href="#">
+            <span class="demo-stories-avatar">
+              <img src="avatars/widget-5.png" alt="" />
+            </span>
+            <span class="demo-stories-name">Технологии<br />комфорта</span>
+          </a>
+          <a href="#">
+            <span class="demo-stories-avatar">
+              <img src="avatars/widget-6.png" alt="" />
+            </span>
+            <span class="demo-stories-name"
+              >Премиальные<br />сервисы<br />комфорта</span
+            >
+          </a>
+          <a href="#">
+            <span class="demo-stories-avatar">
+              <img src="avatars/widget-7.png" alt="" />
+            </span>
+            <span class="demo-stories-name">Уникальные<br />форматы</span>
+          </a>
+          <a href="#">
+            <span class="demo-stories-avatar">
+              <img src="avatars/widget-8.png" alt="" />
+            </span>
+            <span class="demo-stories-name">Планировки<br />и цены</span>
+          </a>
+          <a href="#">
+            <span class="demo-stories-avatar">
+              <img src="avatars/widget-9.png" alt="" />
+            </span>
+            <span class="demo-stories-name">Условия<br />покупки</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stories Slider -->
+      <div class="stories-slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- RED7: STORY 1 -->
+            <div class="swiper-slide">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- RED7: SLIDE 1-1 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content page-1-1-bg"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1
+                            class="page-title page-title_primary"
+                            style="margin: 0 0 2vh"
+                          >
+                            <span>Особый</span>
+                            <span style="align-self: flex-end">статус</span>
+                          </h1>
+                          <p class="page-text">
+                            Клубный дом в&nbsp;историческом центре Москвы
+                            на&nbsp;пересечении
+                            <span style="color: #e40613">Садового кольца</span>
+                            и&nbsp;проспекта Сахарова.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            role="button"
+                            class="btn btn-next"
+                            data-story-index="0"
+                          >
+                            Окружение
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 1-2 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content page-1-2-bg"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 2vh">
+                            <span>Живите в центре</span>
+                            <span style="align-self: flex-end">событий</span>
+                          </h1>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            role="button"
+                            class="btn btn-next"
+                            data-story-index="0"
+                          >
+                            Жизнь в центре
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 1-3 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 4vh">
+                            <span>В шаговой</span>
+                            <span style="align-self: flex-end"
+                              >доступности</span
+                            >
+                          </h1>
+                          <section class="splide slider">
+                            <div class="splide__track">
+                              <ul class="splide__list">
+                                <li class="splide__slide">
+                                  <img
+                                    src="images/slider/slider-img-1.jpg"
+                                    width="282"
+                                    height="174"
+                                    alt=""
+                                  />
+                                  <span> Исторический<br />центр </span>
+                                </li>
+                                <li class="splide__slide">
+                                  <img
+                                    src="images/slider/slider-img-2.jpg"
+                                    width="228"
+                                    height="300"
+                                    alt=""
+                                  />
+                                  <span> Рестораны<br />и кафе </span>
+                                </li>
+                                <li class="splide__slide">
+                                  <img
+                                    src="images/slider/slider-img-3.jpg"
+                                    width="282"
+                                    height="174"
+                                    alt=""
+                                  />
+                                  <span> Музеи </span>
+                                </li>
+                                <li class="splide__slide">
+                                  <img
+                                    src="images/slider/slider-img-4.jpg"
+                                    width="228"
+                                    height="300"
+                                    alt=""
+                                  />
+                                  <span>
+                                    Престижные<br />университеты<br />и школы
+                                  </span>
+                                </li>
+                                <li class="splide__slide">
+                                  <img
+                                    src="images/slider/slider-img-5.jpg"
+                                    width="282"
+                                    height="174"
+                                    alt=""
+                                  />
+                                  <span> Медицинские<br />центры </span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="splide__arrows"></div>
+                          </section>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a role="button" class="btn btn-form">
+                            Записаться на показ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 1-4 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 2vh">
+                            <span>Транспортная</span>
+                            <span style="align-self: flex-end"
+                              >доступность</span
+                            >
+                          </h1>
+                          <div class="page-1-4-content">
+                            <div
+                              class="page-1-4-content__item"
+                              style="padding-bottom: 18px"
+                            >
+                              <div class="page-1-4-content__item-img">
+                                <img
+                                  src="images/page-1-4-1.svg"
+                                  width="35"
+                                  height="14"
+                                  alt=""
+                                />
+
+                                <span>Авто</span>
+                              </div>
+                              <div class="page-1-4-content__text">
+                                <p>
+                                  <span><b>Садовое кольцо</b></span>
+                                  <span>прямой выезд из паркинга</span>
+                                </p>
+                                <p>
+                                  <span><b>Бульварное кольцо</b></span>
+                                  <span>3 минуты</span>
+                                </p>
+                                <p>
+                                  <span><b>ТТК</b></span>
+                                  <span>5 мин</span>
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="page-1-4-content__item"
+                              style="padding: 15px 0"
+                            >
+                              <div class="page-1-4-content__item-img">
+                                <img
+                                  src="images/page-1-4-2.png"
+                                  width="27"
+                                  height="18"
+                                  alt=""
+                                />
+
+                                <span>Метро</span>
+                              </div>
+                              <div class="page-1-4-content__text">
+                                <p>
+                                  <span><b>Красные ворота</b></span>
+                                  <span>7 мин</span>
+                                </p>
+                                <p>
+                                  <span><b>Сухаревская</b></span>
+                                  <span>9 мин</span>
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="page-1-4-content__item"
+                              style="padding-top: 15px"
+                            >
+                              <div class="page-1-4-content__item-img">
+                                <img
+                                  src="images/page-1-4-3.svg"
+                                  width="24"
+                                  height="20"
+                                  alt=""
+                                />
+
+                                <span>Сапсан</span>
+                              </div>
+                              <div class="page-1-4-content__text">
+                                <p>
+                                  <span><b>Площадь 3-х вокзалов</b></span>
+                                  <span>5 мин на авто</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a role="button" class="btn btn-personal-form">
+                            Получить индивидуальную подборку
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: FORM -->
+                  <div
+                    class="swiper-slide"
+                    style="background-color: black"
+                    data-duration="1000000"
+                  >
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div
+                        class="stories-slider-cnt"
+                        style="padding: 32px 20px 0"
+                      >
+                        <div class="sidebar__header">
+                          <img
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                          />
+                        </div>
+                        <div style="display: flex; flex-direction: column">
+                          <h1 class="page-title" style="margin-bottom: 7px">
+                            Заказать звонок
+                          </h1>
+                          <span class="page-text" style="margin-bottom: 20px">
+                            Свяжитесь с&nbsp;нами для получения информации
+                            по&nbsp;телефону или в&nbsp;мессенджерах
+                          </span>
+                          <form id="callbackForm" class="form" action="">
+                            <div class="input-block">
+                              <label class="input-label" for="name"
+                                >Ваше имя</label
+                              >
+                              <input
+                                class="input"
+                                id="name"
+                                name="name"
+                                type="text"
+                                required
+                              />
+                            </div>
+                            <div class="input-block">
+                              <label
+                                id="tel_label"
+                                class="input-label"
+                                for="phone"
+                                >Ваш номер телефона</label
+                              >
+                              <input
+                                class="input tel"
+                                id="tel"
+                                name="tel"
+                                type="tel"
+                                required
+                              />
+                            </div>
+                            <button
+                              class="btn btn_submit"
+                              id="send_call_btn"
+                              type="submit"
+                            >
+                              Отправить
+                            </button>
+                          </form>
+                          <span
+                            class="subscription-text"
+                            style="margin-bottom: 20px"
+                          >
+                            Нажимая кнопку «Отправить», Вы соглашаетесь
+                            с&nbsp;Пользовательским соглашением настоящего сайта
+                          </span>
+                          <div class="form-socials">
+                            <a
+                              role="button"
+                              onclick="window.location='https://t.me/OsnovaChatPlatformBot'"
+                            >
+                              <img
+                                src="images/telegram-icon_black.svg"
+                                width="20"
+                                height="17"
+                                alt=""
+                              />
+                            </a>
+                            <a
+                              role="button"
+                              onclick="window.location='https://wa.me/79030155954'"
+                            >
+                              <img
+                                src="images/whatsapp-icon_black.svg"
+                                width="20"
+                                height="20"
+                                alt=""
+                              />
+                            </a>
+                            <span
+                              class="form-socials-text"
+                              style="color: black"
+                            >
+                              Или просто напишите нам<br />в удобном для вас
+                              мессенджере
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RED7: STORY 2 -->
+            <div class="swiper-slide">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- RED7: SLIDE 2-1 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 18px">
+                            <span>Премиальные</span>
+                            <span style="align-self: flex-end"
+                              >сервисы дома</span
+                            >
+                          </h1>
+                          <div class="page-2-1-content">
+                            <div class="page-2-1-content__block">
+                              <div class="page-2-1-content__item">
+                                <div class="page-2-1-content__img">
+                                  <img
+                                    src="images/page-2-1-icons/icon-1.svg"
+                                    width="17"
+                                    height="17"
+                                    alt=""
+                                  />
+                                </div>
+                                <span>собственный бассейн<br />25 м</span>
+                              </div>
+                              <div class="page-2-1-content__item">
+                                <div class="page-2-1-content__img">
+                                  <img
+                                    src="images/page-2-1-icons/icon-2.svg"
+                                    width="22"
+                                    height="22"
+                                    alt=""
+                                  />
+                                </div>
+                                <span> Премиальный<br />фитнес-клуб </span>
+                              </div>
+                            </div>
+                            <div class="page-2-1-content__block">
+                              <div class="page-2-1-content__item">
+                                <div class="page-2-1-content__img">
+                                  <img
+                                    src="images/page-2-1-icons/icon-3.svg"
+                                    width="23"
+                                    height="19"
+                                    alt=""
+                                  />
+                                </div>
+                                <span>
+                                  персональные столы<br />в ресторане на 1-м
+                                  этаже
+                                </span>
+                              </div>
+                              <div class="page-2-1-content__item">
+                                <div class="page-2-1-content__img">
+                                  <img
+                                    src="images/page-2-1-icons/icon-4.svg"
+                                    width="23"
+                                    height="23"
+                                    alt=""
+                                  />
+                                </div>
+                                <span> консьерж-сервис<br />24/7 </span>
+                              </div>
+                            </div>
+                            <div class="page-2-1-content__block">
+                              <div class="page-2-1-content__item">
+                                <div class="page-2-1-content__img">
+                                  <img
+                                    src="images/page-2-1-icons/icon-5.svg"
+                                    width="23"
+                                    height="23"
+                                    alt=""
+                                  />
+                                </div>
+                                <span>коворкинг</span>
+                              </div>
+                              <div class="page-2-1-content__item">
+                                <div class="page-2-1-content__img">
+                                  <img
+                                    src="images/page-2-1-icons/icon-6.svg"
+                                    width="19"
+                                    height="19"
+                                    alt=""
+                                  />
+                                </div>
+                                <span> магазин<br />здоровой еды </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            role="button"
+                            class="btn btn-next"
+                            data-story-index="1"
+                          >
+                            Клубные пространства
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 2-2 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <div class="page-2-2-content">
+                            <h1
+                              class="page-title"
+                              style="
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                text-align: center;
+                                margin: 0 0 36px;
+                              "
+                            >
+                              Клубные<br />пространства<br />для резидентов
+                            </h1>
+                            <p class="page-text" style="text-align: center">
+                              Принимайте гостей, проводите семейные торжества
+                              или устраивайте вечеринки с&nbsp;друзьями
+                              на&nbsp;клубной террасе для резидентов
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            role="button"
+                            class="btn btn-next"
+                            data-story-index="1"
+                          >
+                            Открытая терраса
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 2-3 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title story-2-title">
+                            <span>Открытая терраса</span>
+                            <span style="align-self: flex-end"
+                              >1000 М<sup>2</sup></span
+                            >
+                          </h1>
+                          <div class="image-block">
+                            <img
+                              src="images/page-2-3-image.jpg"
+                              style="width: 100%"
+                              alt=""
+                            />
+                          </div>
+                          <p class="page-text">
+                            Насладитесь видом на&nbsp;центр города
+                            на&nbsp;открытой террасе, где приятно выпить чашку
+                            кофе с&nbsp;утра или бокал вина на&nbsp;закате
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            role="button"
+                            class="btn btn-next"
+                            data-story-index="1"
+                          >
+                            Закрытое лаунж пространство
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 2-4 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title story-2-title">
+                            <span>Закрытое лаунж</span>
+                            <span style="align-self: flex-end"
+                              >пространство</span
+                            >
+                          </h1>
+                          <div class="image-block">
+                            <img
+                              src="images/page-2-4-image.jpg"
+                              style="width: 100%"
+                              alt=""
+                            />
+                          </div>
+                          <ul class="marked-list">
+                            <li>место для релакса у&nbsp;камина</li>
+                            <li>
+                              большая кухня-гостиная для проведения различных
+                              мероприятий и&nbsp;мастер-классов
+                            </li>
+                            <li>
+                              кинотеатр, который трансформируется в&nbsp;детскую
+                              комнату
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            role="button"
+                            class="btn btn-next"
+                            data-story-index="1"
+                          >
+                            Кинотеатр
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 2-5 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title story-2-title">
+                            <span>Кинотеатр</span>
+                            <span style="align-self: flex-end"
+                              >для резидентов</span
+                            >
+                          </h1>
+                          <div class="image-block">
+                            <img
+                              src="images/page-2-5-image.jpg"
+                              style="width: 100%"
+                              alt=""
+                            />
+                          </div>
+                          <ul class="marked-list">
+                            <li>
+                              Смотрите с&nbsp;друзьями любимые фильмы
+                              и&nbsp;сериалы в&nbsp;клубном кинотеатре
+                            </li>
+                            <li>
+                              Приватное пространство не&nbsp;более чем для
+                              20&nbsp;киноманов
+                            </li>
+                            <li>
+                              Клубный кинотеатр также можно использовать
+                              в&nbsp;качестве детской игровой
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            role="button"
+                            class="btn btn-next"
+                            data-story-index="1"
+                          >
+                            Коворкинг
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 2-6 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1
+                            class="page-title story-2-title"
+                            style="margin-bottom: 80px"
+                          >
+                            Коворкинг
+                          </h1>
+                          <div class="image-block">
+                            <img
+                              src="images/page-2-6-image.jpg"
+                              style="width: 100%"
+                              alt=""
+                            />
+                          </div>
+                          <p class="page-text">
+                            Удобное пространство для работы, проведения
+                            переговоров и&nbsp;деловых встреч с&nbsp;видом
+                            на&nbsp;Садовое кольцо и&nbsp;центр Москвы
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a role="button" class="btn btn-form">
+                            Записаться на показ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RED7: STORY 3 -->
+            <div class="swiper-slide">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- RED7: SLIDE 3-1 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content page-3-1-bg"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 2.8125vh">
+                            <span>Будущая</span>
+                            <span>знаменитость</span>
+                            <span style="align-self: flex-end"
+                              >садового кольца</span
+                            >
+                          </h1>
+                          <p
+                            style="
+                              font-size: 20px;
+                              line-height: 1.3;
+                              color: black;
+                              margin: 0;
+                            "
+                          >
+                            <span
+                              style="
+                                color: rgba(227, 6, 19, 1);
+                                font-size: 20px;
+                              "
+                              >Единственный в&nbsp;России</span
+                            >
+                            проект от&nbsp;всемирно известного голландского бюро
+                            MVRDV.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a class="attachment-btn" role="button">
+                            <img src="images/attachment-icon.svg" alt="" />
+                            Подробнее об MVRDV
+                          </a>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 3-2 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0">
+                            <span>Передовое</span>
+                            <span style="align-self: center"
+                              >нидерландское</span
+                            >
+                            <span style="align-self: flex-end"
+                              >архитектурное бюро</span
+                            >
+                          </h1>
+                          <div class="page-3-2-image">
+                            <img
+                              src="images/page-3-2-image.jpg"
+                              style="width: 100%; margin-bottom: 18px"
+                              alt=""
+                            />
+                          </div>
+                          <p class="page-text">
+                            MVRDV специализируется на проектах в&nbsp;городах
+                            с&nbsp;плотной застройкой в&nbsp;таких городах как
+                            Роттердам, Тяньцзинь, Сеул, Париж, Амстердам,
+                            Мадрид, Копенгаген и&nbsp;Лион.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            role="button"
+                            class="btn btn-next"
+                            data-story-index="2"
+                          >
+                            Дизайнерские интерьеры
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 3-3 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 18px">
+                            <span>Интерьеры</span>
+                            <span style="align-self: flex-end"
+                              >общественных</span
+                            >
+                            <span style="align-self: flex-end"
+                              >пространств</span
+                            >
+                          </h1>
+                          <div class="page-3-3-image">
+                            <span class="page-3-3-image__author">
+                              От восхитительной<br />
+                              <span style="color: rgba(227, 6, 19, 1)"
+                                >Сабин Марселис</span
+                              >
+                            </span>
+                            <span
+                              class="page-3-3-image__subscription page-text"
+                            >
+                              Дизайнерский интерьер лобби, небесной гостиной
+                              и&nbsp;паркинга — знаковые детали проекта
+                              и&nbsp;достояние дома.
+                            </span>
+                            <img
+                              src="images/page-3-3-image.jpg"
+                              style="width: 100%"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            class="attachment-btn"
+                            role="button"
+                            style="color: black"
+                          >
+                            <img src="images/attachment-icon.svg" alt="" />
+                            подробнее о Сабин Марселис
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="attachment">
+                      <button class="attachment-close-btn attachment-close">
+                        <img src="images/sidebar-close.svg" alt="" />
+                      </button>
+                      <div class="attachment-drawer">
+                        <div class="attachment-cnt">
+                          <p class="page-text">
+                            Сабин Марселис основала свою дизайн-студию
+                            в&nbsp;Роттердаме (Нидерланды).
+                          </p>
+                          <p class="page-text">
+                            В своих проектах активно использует свет
+                            и&nbsp;смешивает разнообразные фактуры современных
+                            материалов.
+                          </p>
+                          <p class="page-text">
+                            Художественный подход к&nbsp;дизайну, поиск
+                            уникальных возможностей производстваи кропотливая
+                            работа с&nbsp;освещением&nbsp;— узнаваемый почерк
+                            Сабин Марселис.
+                          </p>
+                          <p class="page-text">
+                            В портфолио студии&nbsp;— совместные проекты
+                            с&nbsp;бюро ОМА Рема Колхаса, павильон Голландии
+                            на&nbsp;Каннском кинофестивале в&nbsp;2017 году
+                            и&nbsp;работа с&nbsp;международными брендами Aesop,
+                            Céline, Isabel Marant.
+                          </p>
+                          <p class="page-text">
+                            Cабин&nbsp;— обладатель награды журнала Wallpaper
+                            в&nbsp;области дизайна Best Ombre (2017),
+                            дизайн-премии швейцарской часовой марки Hublot
+                            (2017) и&nbsp;финалист Open Design Italia (2015).
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RED7: STORY 4 -->
+            <div class="swiper-slide">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- RED7: SLIDE 4-1 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 3vh">
+                            <span>Все апартаменты</span>
+                            <span style="align-self: flex-end"
+                              >с дизайнерской</span
+                            >
+                            <span style="align-self: flex-end">отделкой</span>
+                          </h1>
+                          <p class="page-text" style="margin-bottom: 10px">
+                            Все апартаменты с&nbsp;отделкой от&nbsp;именитых
+                            бюро архитектуры и&nbsp;интерьера —
+                            <span style="color: rgba(227, 6, 19, 1)"
+                              >i29 и OLEG KLODT</span
+                            >
+                          </p>
+                          <div class="page4-1-img-title">
+                            <span class="page4-1-img-title__num">2</span>
+                            <span class="page4-1-img-title__text page-text">
+                              стиля отделки с двумя<br />вариантами цветовой
+                              гаммы
+                            </span>
+                          </div>
+                          <div class="page-4-1-image">
+                            <img
+                              src="images/page-4-1-image.jpg"
+                              style="width: 100%"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            class="btn btn-next"
+                            role="button"
+                            data-story-index="3"
+                          >
+                            Современный минимализм
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 4-2 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <div style="display: flex; flex-direction: column">
+                            <h1 class="page-title" style="margin: 0 0 3vh">
+                              <span>Современный</span>
+                              <span style="align-self: flex-end">
+                                минимализм
+                                <img
+                                  src="images/light-label.svg"
+                                  width="53"
+                                  height="19"
+                                  alt=""
+                                />
+                              </span>
+                            </h1>
+                            <a role="button" class="images-container">
+                              <div class="images-container__wrapper">
+                                <img
+                                  src="images/page-4-2-images/img-4-2-1.jpg"
+                                  width="278"
+                                  height="321"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-2-images/img-4-2-2.jpg"
+                                  width="278"
+                                  height="321"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-2-images/img-4-2-3.jpg"
+                                  width="340"
+                                  height="191"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-2-images/img-4-2-4.jpg"
+                                  width="279"
+                                  height="279"
+                                  alt=""
+                                />
+                              </div>
+                            </a>
+                            <span class="images-caption">
+                              СТУДИЯ АРХИТЕКТУРЫ
+                              <span style="color: #e40613">i29</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            class="btn btn-next"
+                            role="button"
+                            data-story-index="3"
+                          >
+                            Вариант DARK
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 4-3 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <div style="display: flex; flex-direction: column">
+                            <h1 class="page-title" style="margin: 0 0 3vh">
+                              <span>Современный</span>
+                              <span style="align-self: flex-end">
+                                минимализм
+                                <img
+                                  src="images/dark-label.svg"
+                                  width="53"
+                                  height="19"
+                                  alt=""
+                                />
+                              </span>
+                            </h1>
+                            <a role="button" class="images-container">
+                              <div class="images-container__wrapper">
+                                <img
+                                  src="images/page-4-3-images/img-4-3-1.jpg"
+                                  width="278"
+                                  height="321"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-3-images/img-4-3-2.jpg"
+                                  width="360"
+                                  height="270"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-3-images/img-4-3-3.jpg"
+                                  width="320"
+                                  height="240"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-3-images/img-4-3-4.jpg"
+                                  width="320"
+                                  height="240"
+                                  alt=""
+                                />
+                              </div>
+                            </a>
+                            <span class="images-caption">
+                              СТУДИЯ АРХИТЕКТУРЫ
+                              <span style="color: #e40613">i29</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            class="btn btn-next"
+                            role="button"
+                            data-story-index="3"
+                          >
+                            Лаконичная неоклассика
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 4-4 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <div style="display: flex; flex-direction: column">
+                            <h1 class="page-title" style="margin: 0 0 3vh">
+                              <span>Лаконичная</span>
+                              <span style="align-self: flex-end">
+                                неоклассика
+                                <img
+                                  src="images/light-label.svg"
+                                  width="53"
+                                  height="19"
+                                  alt=""
+                                />
+                              </span>
+                            </h1>
+                            <a role="button" class="images-container">
+                              <div class="images-container__wrapper">
+                                <img
+                                  src="images/page-4-4-images/img-4-4-1.jpg"
+                                  width="278"
+                                  height="321"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-4-images/img-4-4-2.jpg"
+                                  width="240"
+                                  height="320"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-4-images/img-4-4-3.jpg"
+                                  width="320"
+                                  height="257"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-4-images/img-4-4-4.jpg"
+                                  width="320"
+                                  height="256"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-4-images/img-4-4-5.jpg"
+                                  width="320"
+                                  height="256"
+                                  alt=""
+                                />
+                              </div>
+                            </a>
+                            <span class="images-caption">
+                              Архитектурное бюро<br />
+                              <span style="color: #e40613">Олега Клодта</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            class="btn btn-next"
+                            role="button"
+                            data-story-index="3"
+                          >
+                            Вариант DARK
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 4-5 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <div style="display: flex; flex-direction: column">
+                            <h1 class="page-title" style="margin: 0 0 3vh">
+                              <span>Лаконичная</span>
+                              <span style="align-self: flex-end">
+                                неоклассика
+                                <img
+                                  src="images/dark-label.svg"
+                                  width="53"
+                                  height="19"
+                                  alt=""
+                                />
+                              </span>
+                            </h1>
+                            <a role="button" class="images-container">
+                              <div class="images-container__wrapper">
+                                <img
+                                  src="images/page-4-5-images/img-4-5-1.jpg"
+                                  width="278"
+                                  height="321"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-5-images/img-4-5-2.jpg"
+                                  width="240"
+                                  height="320"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-5-images/img-4-5-3.jpg"
+                                  width="320"
+                                  height="257"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-5-images/img-4-5-4.jpg"
+                                  width="320"
+                                  height="256"
+                                  alt=""
+                                />
+
+                                <img
+                                  src="images/page-4-5-images/img-4-5-5.jpg"
+                                  width="320"
+                                  height="256"
+                                  alt=""
+                                />
+                              </div>
+                            </a>
+                            <span class="images-caption">
+                              Архитектурное бюро<br />
+                              <span style="color: #e40613">Олега Клодта</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a class="btn btn-form" role="button">
+                            Записаться на показ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RED7: STORY 5 -->
+            <div class="swiper-slide">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- RED7: SLIDE 5-1 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content page-5-1-bg"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 3vh">
+                            <span>Технологии</span>
+                            <span>которые облегчают</span>
+                            <span style="align-self: flex-end">жизнь</span>
+                          </h1>
+                          <p
+                            style="
+                              font-weight: 300;
+                              font-size: 21px;
+                              letter-spacing: -0.02em;
+                              color: #e30613;
+                              margin: 0 0 5px;
+                            "
+                          >
+                            Интеллектуальный дом IRED —
+                          </p>
+                          <p class="page-text">
+                            все для Вашего комфорта и&nbsp;безопасности
+                            в&nbsp;одном приложении!
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            class="attachment-btn"
+                            role="button"
+                            style="color: black"
+                          >
+                            <img src="images/attachment-icon.svg" alt="" />
+                            Подробнее
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="attachment">
+                      <button class="attachment-close-btn attachment-close">
+                        <img src="images/sidebar-close.svg" alt="" />
+                      </button>
+                      <div class="attachment-drawer">
+                        <div class="attachment-cnt">
+                          <h2 class="attachment-title" style="margin: 0 0 30px">
+                            Мобильное приложение ired
+                          </h2>
+                          <h3 class="attachment-block-title">
+                            <img
+                              src="images/safety-icon.svg"
+                              width="20"
+                              height="24"
+                              alt=""
+                            />
+                            Безопасность
+                          </h3>
+                          <ul class="marked-list" style="margin: 0 0 36px 40px">
+                            <li>технология распознавания лиц</li>
+                            <li>
+                              системы идентификации, охраны&nbsp;и
+                              видеонаблюдения
+                            </li>
+                            <li>удаленный контроль охранных систем</li>
+                            <li>
+                              доступ к&nbsp;системам видеонаблюдения внутри
+                              и&nbsp;вне квартиры
+                            </li>
+                          </ul>
+                          <h3 class="attachment-block-title">
+                            <img
+                              src="images/comfort-icon.svg"
+                              width="24"
+                              height="24"
+                              alt=""
+                            />
+                            Комфорт
+                          </h3>
+                          <ul class="marked-list" style="margin: 0 0 40px 40px">
+                            <li>
+                              создание индивидуального микроклимата вашего
+                              пространства
+                            </li>
+                            <li>
+                              удаленное программирование систем вентиляции
+                              и&nbsp;кондиционирования воздуха
+                            </li>
+                            <li>контроль расходов на&nbsp;электричество</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 5-2 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content page-5-2-bg"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 3vh">
+                            <span>Сверхсовременные</span>
+                            <span style="align-self: flex-end"
+                              >системы очистки</span
+                            >
+                            <span style="align-self: flex-end">воздуха</span>
+                          </h1>
+                          <p class="page-text">
+                            Благодаря системам кондиционирования и&nbsp;очистки
+                            воздуха вы забудете, что вы находитесь в&nbsp;центре
+                            мегаполиса и&nbsp;будете дышать чистейшим воздухом.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            role="button"
+                            class="btn btn-next"
+                            data-story-index="4"
+                          >
+                            Лучший вид на город
+                            <img
+                              src="images/arrow-right.svg"
+                              width="30"
+                              height="7"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 5-3 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content page-5-3-bg"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 3vh">
+                            <span>Панорамные окна</span>
+                            <span style="align-self: center"
+                              >в пол и полная</span
+                            >
+                            <span style="align-self: flex-end"
+                              >шумоизоляция</span
+                            >
+                          </h1>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a
+                            class="attachment-btn"
+                            role="button"
+                            style="color: black"
+                          >
+                            <img src="images/attachment-icon.svg" alt="" />
+                            Подробнее
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="attachment">
+                      <button class="attachment-close-btn attachment-close">
+                        <img src="images/sidebar-close.svg" alt="" />
+                      </button>
+                      <div class="attachment-drawer">
+                        <div class="attachment-cnt">
+                          <img
+                            src="images/page-5-3-1-attach-img.jpg"
+                            style="width: 100%; margin-bottom: 20px"
+                            alt=""
+                          />
+
+                          <img
+                            src="images/page-5-3-attach-img.jpg"
+                            style="width: 100%; margin-bottom: 20px"
+                            alt=""
+                          />
+
+                          <p class="page-text" style="margin: 0 0 60px">
+                            Панорамные витражные оконные системы на&nbsp;основе
+                            алюминиевого профиля от&nbsp;бельгийской компании
+                            Reynaers высотой от&nbsp;2,1 до&nbsp;6,4 метра
+                            с&nbsp;повышенной звукоизоляцией
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RED7: STORY 6 -->
+            <div class="swiper-slide">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- RED7: SLIDE 6-1 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <!-- <div class="top-gradient"></div> -->
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 0">
+                        <img
+                          class="logo"
+                          src="images/red7-logo_white.svg"
+                          width="57"
+                          height="26"
+                          alt=""
+                          style="position: absolute; top: 32px; left: 20px"
+                        />
+                        <img
+                          src="images/page-6-1-bg.jpg"
+                          style="width: 100%"
+                          alt=""
+                        />
+                        <div style="padding: 3vh 3vh 0">
+                          <h1 class="page-title" style="margin: 0 0 20px">
+                            <span>Премиальный</span>
+                            <span style="align-self: center">фитнес-центр</span>
+                            <span style="align-self: flex-end; color: #e30613"
+                              >в Вашем доме</span
+                            >
+                          </h1>
+                          <ul class="marked-list">
+                            <li>2 этажа дома площадью 3 500 кв. м.</li>
+                            <li>25-ти метровый бассейн</li>
+                            <li>термальный комплекс</li>
+                            <li>групповые и&nbsp;персональные тренинги</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a class="btn btn-form" role="button">
+                            Записаться на показ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 6-2 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <!-- <div class="top-gradient"></div> -->
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 0">
+                        <img
+                          class="logo"
+                          src="images/red7-logo_white.svg"
+                          width="57"
+                          height="26"
+                          alt=""
+                          style="position: absolute; top: 32px; left: 20px"
+                        />
+                        <img
+                          src="images/page-6-2-bg.jpg"
+                          style="width: 100%"
+                          alt=""
+                        />
+                        <div style="padding: 3vh 3vh 0">
+                          <h1 class="page-title" style="margin: 0 0 20px">
+                            <span>Круглосуточный</span>
+                            <span style="align-self: flex-end; color: #e30613"
+                              >консьерж-сервис</span
+                            >
+                          </h1>
+                          <p class="page-text" style="margin-bottom: 10px">
+                            <b>Доверьте опытным консьержам:</b>
+                          </p>
+                          <ul class="marked-list">
+                            <li>уборку апартаментов</li>
+                            <li>химчистку и ремонт</li>
+                            <li>заказ билетов и трансферов</li>
+                            <li>бронирование столиков в ресторане</li>
+                            <li>заказ еды</li>
+                            <li>вызов такси</li>
+                            <li>заказ и доставку подарков</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a class="btn btn-form" role="button">
+                            Записаться на показ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 6-3 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <!-- <div class="top-gradient"></div> -->
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 0">
+                        <img
+                          class="logo"
+                          src="images/red7-logo_white.svg"
+                          width="57"
+                          height="26"
+                          alt=""
+                          style="position: absolute; top: 32px; left: 20px"
+                        />
+                        <img
+                          src="images/page-6-3-bg.jpg"
+                          style="width: 100%"
+                          alt=""
+                        />
+                        <div style="padding: 3vh 3vh 0">
+                          <h1 class="page-title" style="margin: 0 0 20px">
+                            <span>4-х уровневый</span>
+                            <span style="color: #e30613">паркинг</span>
+                          </h1>
+                          <ul class="marked-list">
+                            <li>коэффициент 1:1</li>
+                            <li>боксы для хранения сезонных вещей</li>
+                            <li>
+                              отдельная площадка для служб доставки
+                              и&nbsp;разгрузки грузовых автомобилей
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a class="btn btn-form" role="button">
+                            Записаться на показ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RED7: STORY 7 -->
+            <div class="swiper-slide">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- RED7: SLIDE 7-1 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content page-7-1-bg"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1
+                            class="page-title"
+                            style="font-size: 30px; margin: 0 0 20px"
+                          >
+                            <span>Апартаменты</span>
+                            <span>с собственной</span>
+                            <span style="align-self: flex-end">террасой</span>
+                          </h1>
+                          <p class="page-text">
+                            В RED7 на&nbsp;Ваш выбор представлено несколько
+                            вариантов апартаментов с&nbsp;террасами площадью
+                            от&nbsp;43 до 74,5 кв.м.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a class="btn btn-form" role="button">
+                            Получить подборку с планировками
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 7-2 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1
+                            class="page-title"
+                            style="font-size: 30px; margin: 0 0 20px"
+                          >
+                            <span>Двухуровневые</span>
+                            <span style="align-self: flex-end"
+                              >апартаменты</span
+                            >
+                          </h1>
+                          <img
+                            src="images/page-7-2-image.jpg"
+                            style="width: 100%"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RED7: STORY 8 -->
+            <div class="swiper-slide">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- RED7: SLIDE 8-1 -->
+                  <div class="swiper-slide">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        background: #f1f2f4;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 0">
+                        <div
+                          class="layout-layer__cnt"
+                          style="background: white; padding: 32px 20px 20px"
+                        >
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <img
+                            style="align-self: center"
+                            class="layout-image"
+                            src="images/layouts/layout-1.jpg"
+                            width="214"
+                            height="261"
+                            alt=""
+                          />
+                        </div>
+                        <div style="padding: 24px 20px">
+                          <h1 class="block-title" style="margin: 0 0 3vh">
+                            Студия, 54.17 м²
+                          </h1>
+                          <ul class="layout-params-list">
+                            <li class="page-text">Холл — 3.91 м²</li>
+                            <li class="page-text">
+                              Кухня-гостиная&nbsp;— 29.28&nbsp;м²
+                            </li>
+                            <li class="page-text">Ванная - 4.26 м²</li>
+                            <li class="page-text">Балкон - 8.36 м²</li>
+                            <li class="page-text">Балкон - 8.36 м²</li>
+                          </ul>
+                          <span class="price-block">27 085 000 ₽</span>
+                        </div>
+                      </div>
+                      <div class="double-cta">
+                        <a
+                          class="btn"
+                          role="button"
+                          onclick="this.nextElementSibling.classList.toggle('active')"
+                          >Забронировать</a
+                        >
+                        <div class="messengers-popup">
+                          <span class="messengers-popup__title"
+                            >Свяжитесь<br />с нами</span
+                          >
+                          <div class="messengers-popup__buttons">
+                            <a
+                              role="button"
+                              onclick="window.location='https://t.me/OsnovaChatPlatformBot'"
+                            >
+                              <img
+                                src="images/telegram-icon_color.svg"
+                                layout="responsive"
+                                width="36"
+                                height="36"
+                                alt=""
+                              />
+                            </a>
+                            <a
+                              role="button"
+                              onclick="window.location='https://wa.me/79030155954'"
+                            >
+                              <img
+                                src="images/whatsapp-icon_color.svg"
+                                width="36"
+                                height="36"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <a
+                          role="button"
+                          class="btn btn-personal-form btn_secondary"
+                        >
+                          Получить<br />индивидуальную<br />подборку
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 8-2 -->
+                  <div class="swiper-slide">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        background: #f1f2f4;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 0">
+                        <div
+                          class="layout-layer__cnt"
+                          style="background: white; padding: 32px 20px 20px"
+                        >
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <img
+                            style="align-self: center"
+                            class="layout-image"
+                            src="images/layouts/layout-2.jpg"
+                            width="214"
+                            height="262"
+                            alt=""
+                          />
+                        </div>
+                        <div style="padding: 24px 20px">
+                          <h1 class="block-title" style="margin: 0 0 3vh">
+                            Евро-2, 52.67 м²
+                          </h1>
+                          <ul class="layout-params-list">
+                            <li class="page-text">Холл — 5.93 м²</li>
+                            <li class="page-text">
+                              Кухня-гостиная&nbsp;— 27.82&nbsp;м²
+                            </li>
+                            <li class="page-text">Гардероб — 14.58 м²</li>
+                            <li class="page-text">Ванная — 4.34 м²</li>
+                          </ul>
+                          <span class="price-block">39 239 150 ₽</span>
+                        </div>
+                      </div>
+                      <div class="double-cta">
+                        <a
+                          class="btn"
+                          role="button"
+                          onclick="this.nextElementSibling.classList.toggle('active')"
+                          >Забронировать</a
+                        >
+                        <div class="messengers-popup">
+                          <span class="messengers-popup__title"
+                            >Свяжитесь<br />с нами</span
+                          >
+                          <div class="messengers-popup__buttons">
+                            <a
+                              role="button"
+                              onclick="window.location='https://t.me/OsnovaChatPlatformBot'"
+                            >
+                              <img
+                                src="images/telegram-icon_color.svg"
+                                layout="responsive"
+                                width="36"
+                                height="36"
+                                alt=""
+                              />
+                            </a>
+                            <a
+                              role="button"
+                              onclick="window.location='https://wa.me/79030155954'"
+                            >
+                              <img
+                                src="images/whatsapp-icon_color.svg"
+                                width="36"
+                                height="36"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <a
+                          role="button"
+                          class="btn btn-personal-form btn_secondary"
+                        >
+                          Получить<br />индивидуальную<br />подборку
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 8-3 -->
+                  <div class="swiper-slide">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        background: #f1f2f4;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 0">
+                        <div
+                          class="layout-layer__cnt"
+                          style="background: white; padding: 32px 20px 20px"
+                        >
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <img
+                            style="align-self: center"
+                            class="layout-image"
+                            src="images/layouts/layout-3.jpg"
+                            width="214"
+                            height="262"
+                            alt=""
+                          />
+                        </div>
+                        <div style="padding: 24px 20px">
+                          <h1 class="block-title" style="margin: 0 0 3vh">
+                            Евро-3, 68.66 м²
+                          </h1>
+                          <ul class="layout-params-list">
+                            <li class="page-text">Холл — 9.99 м²</li>
+                            <li class="page-text">
+                              Кухня-гостиная&nbsp;— 22.53&nbsp;м²
+                            </li>
+                            <li class="page-text">Спальня — 15.72 м²</li>
+                            <li class="page-text">Спальня — 14.16 м²</li>
+                            <li class="page-text">Гардероб — 4.25 м²</li>
+                            <li class="page-text">Ванная — 4.4 м²</li>
+                            <li class="page-text">Ванная — 2.61 м²</li>
+                          </ul>
+                          <span class="price-block">53 554 800 ₽</span>
+                        </div>
+                      </div>
+                      <div class="double-cta">
+                        <a
+                          class="btn"
+                          role="button"
+                          onclick="this.nextElementSibling.classList.toggle('active')"
+                          >Забронировать</a
+                        >
+                        <div class="messengers-popup">
+                          <span class="messengers-popup__title"
+                            >Свяжитесь<br />с нами</span
+                          >
+                          <div class="messengers-popup__buttons">
+                            <a
+                              role="button"
+                              onclick="window.location='https://t.me/OsnovaChatPlatformBot'"
+                            >
+                              <img
+                                src="images/telegram-icon_color.svg"
+                                layout="responsive"
+                                width="36"
+                                height="36"
+                                alt=""
+                              />
+                            </a>
+                            <a
+                              role="button"
+                              onclick="window.location='https://wa.me/79030155954'"
+                            >
+                              <img
+                                src="images/whatsapp-icon_color.svg"
+                                width="36"
+                                height="36"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <a
+                          role="button"
+                          class="btn btn-personal-form btn_secondary"
+                        >
+                          Получить<br />индивидуальную<br />подборку
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 8-4 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 6vh">
+                            <span>Доступно</span>
+                            <span>несколько видов</span>
+                            <span style="align-self: flex-end">планировок</span>
+                          </h1>
+                          <div
+                            class="carousel"
+                            style="height: 201px; margin-bottom: 32px"
+                          >
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-1.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-2.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-3.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-4.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-5.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-6.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-7.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-8.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-9.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-10.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-11.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-12.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-13.png"
+                              />
+                            </a>
+                            <a class="carousel-item">
+                              <img
+                                width="200"
+                                height="201"
+                                src="images/slider-layouts/layout-14.png"
+                              />
+                            </a>
+                          </div>
+                          <p class="page-text">
+                            Получите индивидуальную подборку по&nbsp;вашим
+                            параметрам и&nbsp;ознакомьтесь со&nbsp;всеми
+                            вариантами планировок.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a class="btn btn-personal-form" role="button">
+                            Получить индивидуальную подборку
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: PERSONAL FORM -->
+                  <div
+                    class="swiper-slide"
+                    style="background-color: white"
+                    data-duration="1000000"
+                  >
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div
+                        class="stories-slider-cnt"
+                        style="padding: 32px 20px 0"
+                      >
+                        <img
+                          class="logo"
+                          src="images/red7-logo.svg"
+                          width="57"
+                          height="26"
+                          alt=""
+                          style="margin-bottom: 30px"
+                        />
+                        <h1
+                          class="page-title"
+                          style="
+                            margin: 0 0 12px;
+                            position: relative;
+                            z-index: 10;
+                            font-size: 32px;
+                          "
+                        >
+                          Получите<br />
+                          <span style="color: #e63e1f"
+                            >индивидуальную подборку</span
+                          >
+                        </h1>
+                        <form id="formPersonal" class="whatsapp-form">
+                          <div class="whatsapp-form__row">
+                            <span class="whatsapp-form__row-title"
+                              >Количество спален</span
+                            >
+                            <div class="whatsapp-form__input-block">
+                              <div class="whatsapp-form__input-block-item">
+                                <span>от</span>
+                                <input
+                                  id="bedrooms_from"
+                                  name="bedrooms_from"
+                                  type="text"
+                                  placeholder="1"
+                                  onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+                                />
+                              </div>
+                              <div class="whatsapp-form__input-block-item">
+                                <span>до</span>
+                                <input
+                                  id="bedrooms_to"
+                                  name="bedrooms_to"
+                                  type="text"
+                                  placeholder="5"
+                                  onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="whatsapp-form__row">
+                            <span class="whatsapp-form__row-title"
+                              >Стоимость</span
+                            >
+                            <div class="whatsapp-form__input-block">
+                              <div class="whatsapp-form__input-block-item">
+                                <span>до</span>
+                                <input
+                                  id="cost"
+                                  name="cost"
+                                  type="text"
+                                  placeholder="70 078 296 ₽"
+                                  onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="whatsapp-form__row">
+                            <span class="whatsapp-form__row-title"
+                              >Площадь</span
+                            >
+                            <div class="whatsapp-form__input-block">
+                              <div class="whatsapp-form__input-block-item">
+                                <span>от</span>
+                                <input
+                                  id="square_from"
+                                  name="square_from"
+                                  type="num"
+                                  placeholder="30"
+                                  onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+                                />
+                              </div>
+                              <div class="whatsapp-form__input-block-item">
+                                <span>до</span>
+                                <input
+                                  id="square_to"
+                                  name="square_to"
+                                  type="num"
+                                  placeholder="180"
+                                  onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="whatsapp-form__row">
+                            <span class="whatsapp-form__row-title">Имя</span>
+                            <div class="whatsapp-form__input-block">
+                              <div class="whatsapp-form__input-block-item">
+                                <input
+                                  id="name_pers"
+                                  type="text"
+                                  name="name"
+                                  placeholder="Ваше имя"
+                                  required
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="whatsapp-form__row">
+                            <span
+                              id="tel_label_"
+                              class="whatsapp-form__row-title"
+                              >Телефон</span
+                            >
+                            <div class="whatsapp-form__input-block">
+                              <div class="whatsapp-form__input-block-item">
+                                <input
+                                  id="tel_pers"
+                                  class="tel"
+                                  name="tel"
+                                  type="tel"
+                                  minlength="18"
+                                  required
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <button
+                            type="submit"
+                            id="construct_btn_send"
+                            class="btn"
+                            style="text-transform: none; margin: 6px 0 16px"
+                          >
+                            Получить подборку
+                          </button>
+                        </form>
+                        <div class="form-socials">
+                          <a
+                            role="button"
+                            onclick="window.location='https://t.me/OsnovaChatPlatformBot'"
+                          >
+                            <img
+                              src="images/telegram-icon_black.svg"
+                              width="20"
+                              height="17"
+                              alt=""
+                            />
+                          </a>
+                          <a
+                            role="button"
+                            onclick="window.location='https://wa.me/79030155954'"
+                          >
+                            <img
+                              src="images/whatsapp-icon_black.svg"
+                              width="20"
+                              height="20"
+                              alt=""
+                            />
+                          </a>
+                          <span class="form-socials-text" style="color: black">
+                            Или просто напишите нам<br />в удобном для вас
+                            мессенджере
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RED7: STORY 9 -->
+            <div class="swiper-slide">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- RED7: SLIDE 9-1 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content page-9-1-bg"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 20px">
+                            <span
+                              >Ипотека <span style="font-size: 16px">от</span>
+                              <span style="color: #e40613">5.6%</span></span
+                            >
+                          </h1>
+                          <div
+                            class="feature"
+                            style="
+                              padding-bottom: 3vh;
+                              margin-bottom: 3vh;
+                              border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                            "
+                          >
+                            <span class="feature__title">5.6%</span>
+                            <span class="feature__caption"
+                              >Ставка на весь срок</span
+                            >
+                          </div>
+                          <span
+                            style="
+                              display: block;
+                              font-size: 2vh;
+                              margin-bottom: 16px;
+                            "
+                            >Условия:</span
+                          >
+                          <div class="features-block">
+                            <div class="feature">
+                              <span class="feature__title">20%</span>
+                              <span class="feature__caption">первый взнос</span>
+                            </div>
+                            <div class="feature">
+                              <span class="feature__title">30 лет</span>
+                              <span class="feature__caption"
+                                >максимальный срок</span
+                              >
+                            </div>
+                            <div class="feature" style="grid-column: 1 / 3">
+                              <span class="feature__title">50 млн ₽</span>
+                              <span class="feature__caption"
+                                >максимальная сумма кредита</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a class="btn btn-form" role="button">
+                            Заказать расчет
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 9-2 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 20px">
+                            <span>Онлайн покупка</span>
+                          </h1>
+                          <p
+                            class="page-caption"
+                            style="
+                              border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                              padding-bottom: 20px;
+                              margin-bottom: 20px;
+                            "
+                          >
+                            Мы предоставляем возможность онлайн-презентации
+                            апартаментов и&nbsp;их дистанционной покупки.
+                          </p>
+                          <span
+                            style="
+                              display: block;
+                              font-size: 15px;
+                              margin-bottom: 16px;
+                            "
+                            >Этапы:</span
+                          >
+                          <ul class="stages-list">
+                            <li>Звонок менеджера</li>
+                            <li>
+                              Планирование даты онлайн-презентации апартаментов
+                            </li>
+                            <li>Презентация</li>
+                            <li>Доступные варианты покупки</li>
+                            <li>Оформление сделки</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a class="btn btn-form" role="button">
+                            Запланировать показ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- RED7: SLIDE 9-3 -->
+                  <div class="swiper-slide" style="background-color: white">
+                    <div class="top-gradient"></div>
+                    <div class="stories-slider-actions">
+                      <button class="stories-slider-close-button"></button>
+                    </div>
+                    <div
+                      class="stories-slider-content page-9-3-bg"
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      "
+                    >
+                      <div class="stories-slider-cnt" style="padding: 32px 0 0">
+                        <div class="wrapper">
+                          <img
+                            class="logo"
+                            src="images/red7-logo.svg"
+                            width="57"
+                            height="26"
+                            alt=""
+                            style="margin-bottom: 20px"
+                          />
+                          <h1 class="page-title" style="margin: 0 0 20px">
+                            <span
+                              >Рассрочка
+                              <span style="font-size: 16px">от</span>
+                              <span style="color: #e40613">0%</span></span
+                            >
+                          </h1>
+                          <span class="page-caption"
+                            >Мы подготовили для Вас несколько вариантов
+                            рассрочки.</span
+                          >
+                        </div>
+                      </div>
+                      <div class="cta-layer">
+                        <div
+                          class="cta-layer__cnt"
+                          style="position: relative; z-index: 999999"
+                        >
+                          <a class="btn btn-form" role="button">
+                            Получить расчет
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var elem = document.querySelector('.carousel');
+        var instance = M.Carousel.init(elem, {
+          dist: -200,
+          shift: -60,
+          numVisible: 14,
+        });
+      });
+    </script>
+    <script>
+      function comagicSendData(comagicData) {
+        window.top.postMessage('close-story', '*');
+        console.log(comagicData);
+
+        function requestCallback(o) {
+          let m = JSON.parse(o.response);
+          if (!m.success) {
+            console.log('Error send data');
+            console.log(o.response);
+            document.getElementById('send_call_btn').textContent =
+              'Ошибка отправки';
+            document.getElementById('construct_btn_send').textContent =
+              'Ошибка отправки';
+            return;
+          }
+          document.getElementById('send_call_btn').textContent =
+            'Заявка успешно отправлена';
+          document.getElementById('construct_btn_send').textContent =
+            'Заявка успешно отправлена';
+        }
+
+        if (comagicData.formName === 'Форма: Заказать звонок') {
+          Comagic.addOfflineRequest(
+            {
+              name: comagicData.name,
+              email: comagicData.email,
+              phone: comagicData.tel,
+              form_name: comagicData.formName,
+              message: comagicData.message,
+            },
+            requestCallback(o),
+          );
+        }
+
+        if (
+          comagicData.formName === 'Форма: Получите индивидуальную подборку'
+        ) {
+          Comagic.addOfflineRequest(
+            {
+              name: comagicData.namePers,
+              tel: comagicData.telPers,
+              bedrooms_from: comagicData.bedroomsFrom,
+              bedrooms_to: comagicData.bedroomsTo,
+              square_from: comagicData.squareFrom,
+              square_to: comagicData.squareTo,
+              cost: comagicData.cost,
+              form_name: comagicData.formName,
+              message: comagicData.message,
+            },
+            requestCallback(o),
+          );
+        }
+      }
+
+      // ############# formPersonal Event #############
+      document.getElementById('formPersonal').onsubmit = function () {
+        event.preventDefault();
+        let namePers = document.getElementById('name_pers');
+        let telPers = document.getElementById('tel_pers');
+        let bedrooms_from = document.getElementById('bedrooms_from');
+        let bedrooms_to = document.getElementById('bedrooms_to');
+        let square_from = document.getElementById('square_from');
+        let square_to = document.getElementById('square_to');
+        let cost = document.getElementById('cost');
+
+        if (tel.value == '') {
+          document.getElementById('tel_label_').style.color = '#FF0000';
+          return;
+        }
+
+        var obj = new Object();
+        obj.namePers = namePers.value;
+        obj.telPers = telPers.value;
+        obj.number_of_bedrooms_from = bedrooms_from.value;
+        obj.number_of_bedrooms_to = bedrooms_to.value;
+        obj.square_from = square_from.value;
+        obj.square_to = square_to.value;
+        obj.cost = cost.value;
+        let jsonString = JSON.stringify(obj);
+
+        let comagicData = new Object();
+        comagicData.namePers = namePers.value;
+        comagicData.telPers = telPers.value;
+        comagicData.bedroomsFrom = bedrooms_from.value;
+        comagicData.bedroomsTo = bedrooms_to.value;
+        comagicData.squareFrom = square_from.value;
+        comagicData.squareTo = square_to.value;
+        comagicData.cost = cost.value;
+        comagicData.formName = 'Форма: Получите индивидуальную подборку';
+        comagicData.message = jsonString;
+        comagicSendData(comagicData);
+      };
+      // ############# formPersonal Event #############
+
+      // ############# formCallback Event #############
+      document.getElementById('callbackForm').onsubmit = function () {
+        event.preventDefault();
+        let name = document.getElementById('name');
+        let tel = document.getElementById('tel');
+
+        if (tel.value == '') {
+          document.getElementById('tel_label_').style.color = '#FF0000';
+          return;
+        }
+
+        var obj = new Object();
+        obj.name = name.value;
+        obj.tel = tel.value;
+        let jsonString = JSON.stringify(obj);
+
+        let comagicData = new Object();
+        comagicData.name = name.value;
+        comagicData.tel = tel.value;
+        comagicData.formName = 'Форма: Заказать звонок';
+        comagicData.message = jsonString;
+        comagicSendData(comagicData);
+      };
+      // ############# formCallback Event #############
+
+      // ############# Phone mask #############
+      window.addEventListener('DOMContentLoaded', function () {
+        [].forEach.call(document.querySelectorAll('.tel'), function (input) {
+          var keyCode;
+          function mask(event) {
+            event.keyCode && (keyCode = event.keyCode);
+            var pos = this.selectionStart;
+            if (pos < 3) event.preventDefault();
+            var matrix = '+7 (___) ___-__-__',
+              i = 0,
+              def = matrix.replace(/\D/g, ''),
+              val = this.value.replace(/\D/g, ''),
+              new_value = matrix.replace(/[_\d]/g, function (a) {
+                return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+              });
+            i = new_value.indexOf('_');
+            if (i != -1) {
+              i < 5 && (i = 3);
+              new_value = new_value.slice(0, i);
+            }
+            var reg = matrix
+              .substr(0, this.value.length)
+              .replace(/_+/g, function (a) {
+                return '\\d{1,' + a.length + '}';
+              })
+              .replace(/[+()]/g, '\\$&');
+            reg = new RegExp('^' + reg + '$');
+            if (
+              !reg.test(this.value) ||
+              this.value.length < 5 ||
+              (keyCode > 47 && keyCode < 58)
+            )
+              this.value = new_value;
+            if (event.type == 'blur' && this.value.length < 5) this.value = '';
+          }
+
+          input.addEventListener('input', mask, false);
+          input.addEventListener('focus', mask, false);
+          input.addEventListener('blur', mask, false);
+          input.addEventListener('keydown', mask, false);
+        });
+      });
+      // ############# Phone mask #############
+    </script>
+
+    <script type="text/javascript">
+      var __cs = __cs || [];
+      __cs.push(['setCsAccount', 'P9MGH_SwFkyiulNp2y0zlvS_NsTzwYlk']);
+    </script>
+    <script
+      type="text/javascript"
+      async
+      src="https://app.comagic.ru/static/cs.min.js"
+    ></script>
+
+    <script>
+      dataLayer.push({
+        event: 'GAevent',
+        eventCategory: 'form',
+        eventAction: 'send',
+        eventLabel: 'stories',
+      });
+    </script>
+
+    <!-- <script>
+      ym(50545570, 'reachGoal', 'form_send_stories');
+    </script> -->
+  </body>
+</html>
