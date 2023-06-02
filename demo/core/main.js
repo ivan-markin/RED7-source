@@ -145,15 +145,15 @@ document.querySelectorAll('.demo-post-avatar').forEach((avatarEl) => {
 });
 
 // stories slider close handler
-storiesSliderEl.addEventListener('click', (e) => {
+storiesSliderEl.addEventListener('click', (e) => {  
   // if we clicked at "stories-slider-close-button"
   if (e.target.matches('.stories-slider-close-button')) {
+    // window.top.postMessage('close-story', '*');
     // disable slider as we don't need it autoplay stories while it is hidden
     storiesSlider.disable();
     // add "out" class (used in demo for animated disappearance)
     storiesSliderEl.classList.add('stories-slider-out');
-  }
-  // window.top.postMessage('close-story', '*');
+  }  
 });
 
 // when slider became hidden we need to remove "in" and "out" class to return it initial state
