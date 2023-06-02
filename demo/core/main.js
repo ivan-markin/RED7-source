@@ -165,7 +165,10 @@ storiesSliderEl.addEventListener('animationend', () => {
 });
 
 window.onmessage = (e) => {
-  storiesSliderEl.classList.add('stories-slider-in');
-  storiesSlider.enable();
-  storiesSlider.slideTo(parseInt(e.data.slice(-1), 10), 0);
+  if(e.data && Array.isArray(e.data)){
+    storiesSliderEl.classList.add('stories-slider-in');
+    storiesSlider.enable();
+    console.log(e.data,e,'e.data')
+    storiesSlider.slideTo(parseInt(e.data.slice(-1), 10), 0);
+  }
 };
