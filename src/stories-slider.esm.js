@@ -1,5 +1,4 @@
 /* eslint-disable no-shadow */
-// import addYandexMetrics from './metrika.js';
 
 export default function createStoriesSlider(el, params = {}) {
   const mainSwiperEl = el.querySelector('.swiper');
@@ -414,9 +413,7 @@ export default function createStoriesSlider(el, params = {}) {
         }
       }
     }
-  };
-
-  // addYandexMetrics(window, document);
+  };  
 
   return { el, mainSwiper, subSwipers, destroy, slideTo, enable, disable };
 }

@@ -63,9 +63,9 @@
     <!-- End Google Tag Manager -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stories Slider</title>
-    <script type="module" crossorigin src="assets/index.3f46c572.js"></script>
-    <link rel="stylesheet" href="assets/index.14694bfc.css">
+    <title>RED7</title>
+    <script type="module" crossorigin src="assets/index.f8f5e442.js"></script>
+    <link rel="stylesheet" href="assets/index.feeeb086.css">
   </head>
 
   <body>
@@ -3268,22 +3268,41 @@
       function comagicSendData(comagicData) {
         window.top.postMessage('close-story', '*');
         console.log(comagicData);
+        console.log(ym,'ym');
 
         function requestCallback(o) {
           let m = JSON.parse(o.response);
           if (!m.success) {
             console.log('Error send data');
-            console.log(o.response);
+            console.log(o.response);            
             document.getElementById('send_call_btn').textContent =
               'Ошибка отправки';
             document.getElementById('construct_btn_send').textContent =
               'Ошибка отправки';
+            document.body.removeChild(scriptOne);
+            document.body.removeChild(scriptTwo);
             return;
           }
           document.getElementById('send_call_btn').textContent =
             'Заявка успешно отправлена';
           document.getElementById('construct_btn_send').textContent =
             'Заявка успешно отправлена';
+          
+          dataLayer.push({
+            event: 'GAevent',
+            eventCategory: 'form',
+            eventAction: 'send',
+            eventLabel: 'stories',
+          });
+
+          ym(50545570, 'reachGoal', 'form_send_stories');
+          
+          // appendScript();
+
+          // setTimeout(() => {
+          //   document.body.removeChild(scriptOne);
+          //   document.body.removeChild(scriptTwo);
+          // }, 1000)                      
         }
 
         if (comagicData.formName === 'Форма: Заказать звонок') {
@@ -3318,6 +3337,23 @@
           );
         }
       }
+
+      // function appendScript() {
+      //   const scriptOne = document.createElement('script');
+      //   const scriptTwo = document.createElement('script');
+
+      //   scriptOne.innerHTML = `dataLayer.push({
+      //     event: 'GAevent',
+      //     eventCategory: 'form',
+      //     eventAction: 'send',
+      //     eventLabel: 'stories',
+      //   });`
+
+      //   scriptTwo.innerHTML = `ym(50545570, 'reachGoal', 'form_send_stories');`
+
+      //   document.body.appendChild(scriptOne);
+      //   document.body.appendChild(scriptTwo);        
+      // }
 
       // ############# formPersonal Event #############
       document.getElementById('formPersonal').onsubmit = function () {
@@ -3355,7 +3391,7 @@
         comagicData.cost = cost.value;
         comagicData.formName = 'Форма: Получите индивидуальную подборку';
         comagicData.message = jsonString;
-        comagicSendData(comagicData);
+        comagicSendData(comagicData);        
       };
       // ############# formPersonal Event #############
 
@@ -3380,7 +3416,7 @@
         comagicData.tel = tel.value;
         comagicData.formName = 'Форма: Заказать звонок';
         comagicData.message = jsonString;
-        comagicSendData(comagicData);
+        comagicSendData(comagicData);        
       };
       // ############# formCallback Event #############
 
@@ -3437,9 +3473,9 @@
       type="text/javascript"
       async
       src="https://app.comagic.ru/static/cs.min.js"
-    ></script>
-
-    <script>
+    ></script>   
+    
+    <!-- <script>
       dataLayer.push({
         event: 'GAevent',
         eventCategory: 'form',
@@ -3450,6 +3486,6 @@
 
     <script>
       ym(50545570, 'reachGoal', 'form_send_stories');
-    </script>
+    </script> -->
   </body>
 </html>
