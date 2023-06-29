@@ -3267,8 +3267,7 @@
     <script>
       function comagicSendData(comagicData) {
         window.top.postMessage('close-story', '*');
-        console.log(comagicData);
-        console.log(ym,'ym');
+        // console.log(comagicData);              
 
         function requestCallback(o) {
           let m = JSON.parse(o.response);
@@ -3278,9 +3277,7 @@
             document.getElementById('send_call_btn').textContent =
               'Ошибка отправки';
             document.getElementById('construct_btn_send').textContent =
-              'Ошибка отправки';
-            document.body.removeChild(scriptOne);
-            document.body.removeChild(scriptTwo);
+              'Ошибка отправки';          
             return;
           }
           document.getElementById('send_call_btn').textContent =
@@ -3295,14 +3292,7 @@
             eventLabel: 'stories',
           });
 
-          ym(50545570, 'reachGoal', 'form_send_stories');
-          
-          // appendScript();
-
-          // setTimeout(() => {
-          //   document.body.removeChild(scriptOne);
-          //   document.body.removeChild(scriptTwo);
-          // }, 1000)                      
+          ym(50545570, 'reachGoal', 'form_send_stories');                                      
         }
 
         if (comagicData.formName === 'Форма: Заказать звонок') {
@@ -3313,8 +3303,8 @@
               phone: comagicData.tel,
               form_name: comagicData.formName,
               message: comagicData.message,
-            },
-            requestCallback(o),
+            },            
+            function(o) {requestCallback(o)}
           );
         }
 
@@ -3331,29 +3321,12 @@
               square_to: comagicData.squareTo,
               cost: comagicData.cost,
               form_name: comagicData.formName,
-              message: comagicData.message,
+              message: comagicData.message,              
             },
-            requestCallback(o),
+            function(o) {requestCallback(o)}
           );
-        }
-      }
-
-      // function appendScript() {
-      //   const scriptOne = document.createElement('script');
-      //   const scriptTwo = document.createElement('script');
-
-      //   scriptOne.innerHTML = `dataLayer.push({
-      //     event: 'GAevent',
-      //     eventCategory: 'form',
-      //     eventAction: 'send',
-      //     eventLabel: 'stories',
-      //   });`
-
-      //   scriptTwo.innerHTML = `ym(50545570, 'reachGoal', 'form_send_stories');`
-
-      //   document.body.appendChild(scriptOne);
-      //   document.body.appendChild(scriptTwo);        
-      // }
+        }                
+      }      
 
       // ############# formPersonal Event #############
       document.getElementById('formPersonal').onsubmit = function () {
